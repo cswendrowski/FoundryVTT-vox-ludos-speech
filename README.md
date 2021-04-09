@@ -12,6 +12,7 @@
 
 Vox Ludos is a speech-to-text-to-speech module for FoundryVTT powered by Azure Speech
 
+Check out a short demo video here:
 https://user-images.githubusercontent.com/15639841/114201277-a0732700-991b-11eb-98e5-a05d3365e944.mp4
 
 
