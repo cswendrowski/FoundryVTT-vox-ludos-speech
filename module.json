@@ -1,17 +1,20 @@
 {
-  "name": "module",
-  "title": "New Module",
-  "description": "",
+  "name": "voxludos",
+  "title": "Vox Ludos - Text-to-speech-to-text for FVTT",
+  "description": "A text-to-speech-to-text module for FVTT, powered by Azure Speech",
   "version": "This is auto replaced",
   "library": "false",
   "manifestPlusVersion": "1.0.0",
   "minimumCoreVersion": "0.7.9",
   "compatibleCoreVersion": "0.7.9",
+  "author": "Cody Swendrowski <cody@swendrowski.us>",
   "authors": [
     {
-      "name": "The League of Extraordinary FVTT Developers",
-      "url": "https://github.com/League-of-Foundry-Developers",
-      "discord": "discordID#0001"
+      "name": "Cody Swendrowski",
+      "url": "https://swendrowski.us",
+      "email": "cody@swendrowski.us",
+      "discord": "cswendrowski#9701",
+      "patreon": "ironmoose"
     }
   ],
   "dependencies": [
@@ -24,7 +27,7 @@
     "/scripts/module.js"
   ],
   "scripts": [
-    "/scripts/lib/lib.js"
+    "./scripts/lib/microsoft.cognitiveservices.speech.sdk.bundle.js"
   ],
   "styles": [
     "/styles/module.css"

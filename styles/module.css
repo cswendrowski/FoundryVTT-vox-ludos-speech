@@ -1,0 +1,15 @@
+#chat-controls .control-buttons {
+    flex: 0 0 65px;
+}
+
+.recording {
+    color: crimson;
+}
+
+.playing {
+    color: forestgreen;
+}
+
+.message-speak {
+    padding-right: 3px;
+}
