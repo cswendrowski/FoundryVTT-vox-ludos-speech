@@ -16,6 +16,10 @@ Check out a short demo video here:
 https://user-images.githubusercontent.com/15639841/114201277-a0732700-991b-11eb-98e5-a05d3365e944.mp4
 
 
+## Warning - Not available on HTTP
+
+Due to how modern browsers protect you, Media sources (both microphone and speaker) are unavailable when on insecure connections such as HTTP. This module will not work on direct IP connections such as http://<IP>:30000/game
+
 ## As-Is
 Vox Ludos could definitely do more than it does now, but I wanted to get out what I had in a usable format rather than let it never be released at all. Unfortunately, this is being released as-is: PR's are welcome, but I do not anticipate having any time to add any new features to this.
 
