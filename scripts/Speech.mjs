@@ -3,7 +3,7 @@ import constants from "./Constants.mjs";
 export default class Speech {
 
     constructor() {
-        let key = "4b50e7a475e044db82676a161a8c51f7";
+        let key = game.settings.get(constants.moduleName, "subscriptionKey");
         let region = game.settings.get(constants.moduleName, "region");
         let lang = game.settings.get(constants.moduleName, "lang");
         this.speechConfig = SpeechSDK.SpeechConfig.fromSubscription(key, region);
