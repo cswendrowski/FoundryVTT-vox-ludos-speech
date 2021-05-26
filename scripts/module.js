@@ -6,7 +6,7 @@ Hooks.on('renderActorSheet', function(sheet, html, data) {
 
     let configureSheet = html.find('.configure-sheet');
 
-    let toAppend = '<a class="fvtt-speak"><i class="fas fa-microphone"></i>Speak</a>';
+    let toAppend = `<a class="fvtt-speak"><i class="fas fa-microphone"></i>${game.i18n.localize("voxludos.controls.speak")}</a>`;
     if (configureSheet.length == 0) {
         html.find('.close').before(toAppend);
     }
@@ -42,7 +42,7 @@ Hooks.on('renderChatLog', function(directory, html, data) {
             actor = game.user.character;
         }
         else {
-            ui.notifications.warn("You do not currently have an Actor selected to speak as");
+            ui.notifications.warn(game.i18n.localize("voxludos.warn.noActorSelected"));
             return;
         }
         await window.game.speech.transcribe(actor);
