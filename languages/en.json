@@ -1,3 +1,14 @@
 {
-    "MODULE.hello": "hello"
+    "voxludos.subscriptionKey.name": "Azure Speech Subscription Key",
+    "voxludos.region.name": "Azure Speech Region",
+    "voxludos.autoRead.name": "Should chat messages from others be automatically read via TTS?",
+    "voxludos.voice.name": "Voice",
+    "voxludos.style.name": "Voice Style",
+    "voxludos.lang.name": "Language",
+    "voxludos.volume.name": "Volume of Voice",
+    "voxludos.rate.name": "Rate of Voice",
+    "voxludos.pitch.name": "Pitch of Voice",
+    "voxludos.warn.noAudioDevice": "Could not connect to audio devices - are you on an insecure connection such as HTTP?",
+    "voxludos.warn.noActorSelected": "You do not currently have an Actor selected to speak as",
+    "voxludos.controls.speak": "Speak"
 }

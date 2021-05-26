@@ -10,7 +10,7 @@ export default class Speech {
         this.speechConfig.speechRecognitionLanguage = lang;
 
         if (navigator.mediaDevices == undefined) {
-            ui.notifications.warn("Could not connect to audio devices - are you on an insecure connection such as HTTP?")
+            ui.notifications.warn(game.i18n.localize("voxludos.warn.noAudioDevice"))
         }
     }
 

@@ -11,7 +11,7 @@ export default class Settings {
     static async registerSettings() {
 
         game.settings.register(constants.moduleName, "subscriptionKey", {
-            name: 'Azure Speech Subscription Key',
+            name: game.i18n.localize(`${constants.moduleName}.subscriptionKey.name`),
             scope: 'world',
             config: true,
             type: String,
@@ -19,7 +19,7 @@ export default class Settings {
         });
 
         game.settings.register(constants.moduleName, "region", {
-            name: 'Azure Speech Region',
+            name: game.i18n.localize(`${constants.moduleName}.region.name`),
             scope: 'world',
             config: true,
             type: String,
@@ -28,7 +28,7 @@ export default class Settings {
 
 
         game.settings.register(constants.moduleName, "autoRead", {
-            name: 'Should chat messages from others be automatically read via TTS?',
+            name: game.i18n.localize(`${constants.moduleName}.autoRead.name`),
             scope: 'client',
             config: true,
             type: Boolean,
@@ -36,7 +36,7 @@ export default class Settings {
         });
 
         game.settings.register(constants.moduleName, "voice", {
-            name: 'Voice',
+            name: game.i18n.localize(`${constants.moduleName}.voice.name`),
             hint: 'https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support#neural-voices',
             scope: 'client',
             config: true,
@@ -45,7 +45,7 @@ export default class Settings {
         });
 
         game.settings.register(constants.moduleName, "style", {
-            name: 'Voice Style',
+            name: game.i18n.localize(`${constants.moduleName}.style.name`),
             hint: 'https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-synthesis-markup?tabs=csharp#adjust-speaking-styles',
             scope: 'client',
             config: true,
@@ -54,7 +54,7 @@ export default class Settings {
         });
 
         game.settings.register(constants.moduleName, "lang", {
-            name: 'Language',
+            name: game.i18n.localize(`${constants.moduleName}.lang.name`),
             hint: 'https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support',
             scope: 'client',
             config: true,
@@ -63,7 +63,7 @@ export default class Settings {
         });
 
         game.settings.register(constants.moduleName, "volume", {
-            name: 'Volume of Voice',
+            name: game.i18n.localize(`${constants.moduleName}.volume.name`),
             hint: 'https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-synthesis-markup?tabs=csharp#adjust-prosody',
             scope: 'client',
             config: true,
@@ -72,7 +72,7 @@ export default class Settings {
         });
 
         game.settings.register(constants.moduleName, "rate", {
-            name: 'Rate of Voice',
+            name: game.i18n.localize(`${constants.moduleName}.rate.name`),
             hint: 'https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-synthesis-markup?tabs=csharp#adjust-prosody',
             scope: 'client',
             config: true,
@@ -81,7 +81,7 @@ export default class Settings {
         });
 
         game.settings.register(constants.moduleName, "pitch", {
-            name: 'Pitch of Voice',
+            name: game.i18n.localize(`${constants.moduleName}.pitch.name`),
             hint: 'https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-synthesis-markup?tabs=csharp#adjust-prosody',
             scope: 'client',
             config: true,
