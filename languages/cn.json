@@ -10,5 +10,5 @@
     "voxludos.pitch.name": "音调",
     "voxludos.warn.noAudioDevice": "无法连接到音频设备 - 是否在使用不安全的连接，比如 HTTP？",
     "voxludos.warn.noActorSelected": "你当前没有选择角色以发言",
-    "voxludos.controls.speak": "朗读"
+    "voxludos.controls.speak": "发言"
 }
