@@ -25,7 +25,19 @@ Hooks.on('renderChatMessage', function(message, html, data) {
         .before(' <a class="button message-speak"><i class="fas fa-headphones"></i></a>');
 
     html.find('.message-speak').click(event => {
-        window.game.speech.speakText(message.data.content, event.target);
+        let args;
+        if (message.data.speaker?.actor) {
+            let speaker = game.actors.get(message.data.speaker?.actor);
+            args = {
+                voice: speaker.getFlag(constants.moduleName, "voice"),
+                lang: speaker.getFlag(constants.moduleName, "lang"),
+                style: speaker.getFlag(constants.moduleName, "style"),
+                volume: speaker.getFlag(constants.moduleName, "volume"),
+                rate: speaker.getFlag(constants.moduleName, "rate"),
+                pitch: speaker.getFlag(constants.moduleName, "pitch"),
+            };
+        }
+        window.game.speech.speakText(message.data.content, args);
     });
 });
 

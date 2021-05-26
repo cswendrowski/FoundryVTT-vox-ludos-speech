@@ -39,16 +39,16 @@ export default class Speech {
         );
     }
 
-    async speakText(text) {
+    async speakText(text, args = null) {
         if (this.synthesizer == undefined) {
             this.connectSpeaker();
         }
-        let voice = game.settings.get(constants.moduleName, "voice");
-        let lang = game.settings.get(constants.moduleName, "lang");
-        let style = game.settings.get(constants.moduleName, "style");
-        let volume = game.settings.get(constants.moduleName, "volume");
-        let rate = game.settings.get(constants.moduleName, "rate");
-        let pitch = game.settings.get(constants.moduleName, "pitch");
+        let voice = args?.voice || game.settings.get(constants.moduleName, "voice");
+        let lang = args?.lang || game.settings.get(constants.moduleName, "lang");
+        let style = args?.style || game.settings.get(constants.moduleName, "style");
+        let volume = args?.volume || game.settings.get(constants.moduleName, "volume");
+        let rate = args?.rate || game.settings.get(constants.moduleName, "rate");
+        let pitch = args?.pitch || game.settings.get(constants.moduleName, "pitch");
         let ssml =
             `<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version=\"1.0\" xml:lang="${lang}">` +
             `<voice name="${voice}">` +
