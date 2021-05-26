@@ -37,6 +37,11 @@
       "lang": "en",
       "name": "English",
       "path": "languages/en.json"
+    },
+    {
+      "lang": "cn",
+      "name": "中文",
+      "path": "languages/cn.json"
     }
   ],
   "url": "This is auto replaced",

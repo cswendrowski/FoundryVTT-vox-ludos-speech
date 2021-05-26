@@ -1,0 +1,14 @@
+{
+    "voxludos.subscriptionKey.name": "Azure Speech 订阅密钥",
+    "voxludos.region.name": "Azure Speech 区域",
+    "voxludos.autoRead.name": "启用聊天消息自动 TTS 朗读？",
+    "voxludos.voice.name": "声音",
+    "voxludos.style.name": "声音风格",
+    "voxludos.lang.name": "语言",
+    "voxludos.volume.name": "音量",
+    "voxludos.rate.name": "语速",
+    "voxludos.pitch.name": "音调",
+    "voxludos.warn.noAudioDevice": "无法连接到音频设备 - 是否在使用不安全的连接，比如 HTTP？",
+    "voxludos.warn.noActorSelected": "你当前没有选择角色以朗读之",
+    "voxludos.controls.speak": "朗读"
+}
